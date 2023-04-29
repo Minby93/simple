@@ -20,9 +20,9 @@ public class AlpinistController {
         model.addAttribute("alpinists", alpinistService.listAlpinists());
         return "alpinist";
     }
-    @GetMapping("/alpinist/{id}")
-    public String alpinistInfo(@PathVariable Long id, Model model){
-        model.addAttribute("alpinist", alpinistService.getAlpinistById(id));
+    @GetMapping("/alpinist/{aId}")
+    public String alpinistInfo(@PathVariable Long aId, Model model){
+        model.addAttribute("alpinist", alpinistService.getAlpinistById(aId));
         return "alpinist-info";
     }
     @PostMapping("/alpinist/create")
@@ -30,9 +30,9 @@ public class AlpinistController {
         alpinistService.saveAlpinist(alpinist);
         return "redirect:/";
     }
-    @PostMapping("/alpinist/delete/{id}")
-    public String deleteAlpinist(@PathVariable Long id){
-        alpinistService.deleteAlpinist(id);
+    @PostMapping("/alpinist/delete/{aId}")
+    public String deleteAlpinist(@PathVariable Long aId){
+        alpinistService.deleteAlpinist(aId);
         return "redirect:/";
     }
 }

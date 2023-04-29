@@ -5,7 +5,6 @@ import com.example.ascents.repositories.AlpinistRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -21,8 +20,8 @@ public class AlpinistService {
         alpinistRepository.save(alpinist);
     }
 
-    public void deleteAlpinist(Long id) {
-        alpinistRepository.deleteById(id);
+    public void deleteAlpinist(Long aId) {
+        alpinistRepository.deleteById(aId);
     }
 
     public Alpinist getAlpinistById(Long id){

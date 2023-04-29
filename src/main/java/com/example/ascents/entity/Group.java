@@ -6,17 +6,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "alpinists")
+@Table(name = "groups")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Alpinist {
+public class Group {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "a_id")
-    private Long aId;
-    @Column(name = "a_name")
-    private String aName;
-    @Column(name = "a_adress")
-    private String aAdress;
+    @Column(name = "g_id")
+    private Long gId;
+    @Column(name = "g_name")
+    private String gName;
 }

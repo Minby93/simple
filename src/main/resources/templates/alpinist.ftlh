@@ -8,7 +8,7 @@
     <h4>Alpinist from Russia</h4>
     <#list alpinists as alpinist>
         <div>
-            <p><b>${alpinist.aName}</b> ${alpinist.aAdress} | <a href="/alpinist/${alpinist.id}">Подробнее...</a></p>
+            <p><b>${alpinist.getAName()}</b> <a href="/alpinist/${alpinist.getAId()}">Узнать подробнее...</a></p>
         </div>
         <#else>
         <h3>Альпинистов нет</h3>
@@ -20,5 +20,8 @@
     Адресс альпиниста: <input type="text" name="aAdress"><br>
     <input type="submit" value="Добавить альпиниста"/>
 </form>
-    </body>
+<div>
+</div>
+    <a href="/group">Перейти к группам</a>
+</body>
 </html>
