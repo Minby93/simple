@@ -2,16 +2,22 @@
 <html>
     <head>
         <title>Alpinist</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/infoPage.css">
     </head>
     <body>
-    <h1>Alpinists</h1><hr>
-    <h4>Подробная информация об альпинисте</h4>
-    <b>Имя альпиниста: </b>${alpinist.getAName()}<br>
-    <b>Адресс: </b>${alpinist.getAAdress()}<br>
-<hr>
-<form action="/alpinist/delete/${alpinist.getAId()}" method="post">
+    <div class="infoPage">
+        <h2>Подробная информация об альпинисте</h2>
+        <b class="info">Имя альпиниста: </b><p>${alpinist.getAName()}</p><br>
+        <b class="info">Адресс: </b><p>${alpinist.getAAdress()}</p><br>
+        <form action="/alpinist/delete/${alpinist.getAId()}" method="post">
 
-    <input type="submit" value="Удалить альпиниста"/>
-</form>
+            <input class="fbutton" type="submit" value="Удалить альпиниста"/>
+        </form>
+        <form action="/alpinist/edit/${alpinist.getAId()}" method="post">
+
+            <input class="fbutton" type="submit" value="Редактировать альпиниста"/>
+        </form>
+    </div>
     </body>
 </html>

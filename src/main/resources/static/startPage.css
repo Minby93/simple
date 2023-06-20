@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.contNewAlp{
+    margin-right: 3%;
+
+}
+.contListAlp{
+    width: 50%;
+    margin-left: 3%
+}
+.name{
+    margin-right: 7%;
+}
+.listAlp{
+
+}
+.h3left{
+
+}
+.newAlp{
+
+}
+.h3right{
+
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
